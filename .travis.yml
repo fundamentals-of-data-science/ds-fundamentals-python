@@ -25,5 +25,5 @@ deploy:
     secure: PLEASE_REPLACE_ME
   on:
     tags: true
-    repo: fundamentals-of-data-science/fundamentals_of_data_science
+    repo: fundamentals-of-data-science/ds-fundamentals-python
     python: 3.6
