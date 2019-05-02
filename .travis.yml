@@ -2,8 +2,6 @@ language: python
 python:
 - 3.6
 - 3.5
-# - 3.4
-# - 2.7
 install: pip install -U tox-travis
 script: tox
 deploy:
@@ -16,3 +14,6 @@ deploy:
     tags: true
     repo: fundamentals-of-data-science/ds-fundamentals-python
     python: 3.6
+notifications:
+  slack:
+    secure: tCijmSLRg6+wmntbG6sxDCAoO3Ck2+7sejhIx0LYNoFMALLWCZAHy5EAEvr6lzIFTMt77t5AzvWkiaw0mghTthFH4wwkN+Q30mwFG3nlJTEgHiWQs/9LRx7a8cdEE1f+OioMME+mNUCedxqCfP5/m3L8OfN+T2bWsY2xUYaF/loC/ubQi9fcGXyuwfnkbs5MJzs5qTcWYpUmXRxzlLOQReme5/a9mbDsQGfm5PFJEh0qV+/rvXW9l7vNnUDJTwbK5rnON66jnv6HlTqk1dOdISPwZHA195RNpkwJxoJcjvIDVwPZzOwdStW9Rt1MUax5HqHHozriecpTbx7VP3ztQkPHfdGAhq2sCxKzWw07UJjB7HHmBVnL4XqhKbd/EzNOSAZ4CrjfAzRINkJWgT6FsN21Dun0FLIMRiFQcGOpHY8yNCCafNEby717nzRzNAEZLt/EOPYLlaK0DC0znCSwJRlLZ4ffuiqOMQIy0q2NcIkc5JIFZRZPLNueCbluNjwB5fHLHjsTaQAw+5Jy1kDgbB9k0EjfPZpbTcXO+uTwAaGVxf0tbU8PIE0MJ7VemK8Q2q2QSuOOx0QAA3G444EnC7kDhXbU4xcynp/Ov17TGdXUcc7orqA7895YQfc5nu7kpEX64da7G0Jia0X3z2P+ahqezDZV3f22l3xrqWOo4uE=
