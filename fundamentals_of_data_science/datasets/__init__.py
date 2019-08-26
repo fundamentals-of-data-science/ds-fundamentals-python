@@ -41,7 +41,7 @@ def arsenic():
         >>> df.head()
     """
     filename = os.path.abspath(os.path.join(os.path.dirname(__file__), 'arsenic.wells.tsv'))
-    return(pd.read_csv(filename, delimeter="\t"))
+    return(pd.read_csv(filename, delimiter="\t"))
 
 
 def child_iq():
@@ -55,7 +55,7 @@ def child_iq():
         >>> df.head()
     """
     filename = os.path.abspath(os.path.join(os.path.dirname(__file__), 'child_iq.tsv'))
-    return(pd.read_csv(filename, delimeter="\t"))        
+    return(pd.read_csv(filename, delimiter="\t"))        
 
 
 def mesquite():
@@ -69,4 +69,4 @@ def mesquite():
         >>> df.head()
     """
     filename = os.path.abspath(os.path.join(os.path.dirname(__file__), 'mesquite.tsv'))
-    return(pd.read_csv(filename, delimeter="\t"))                
+    return(pd.read_csv(filename, delimiter="\t"))                
