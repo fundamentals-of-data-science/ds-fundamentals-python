@@ -5,6 +5,7 @@ import scipy.stats as stats
 
 
 def display_dict(m, precision=3):
+    """Displays a dictionaray"""
     table = "<table>"
     for item in m.items():
         table += ("<tr><th>{0}</th><td>{1:." + str(precision) + "f}</td></tr>").format(*item)
@@ -13,12 +14,14 @@ def display_dict(m, precision=3):
 
 
 def calculate_tukey_five(data):
+    """Calculate Tukey"""
     min, q1, q2, q3, max = np.concatenate([[np.min(data)], stats.mstats.mquantiles( data, [0.25, 0.5, 0.75]),[np.max(data)]])
     data = {"Min": min, "Q1": q1, "Q2": q2, "Q3": q3, "Max": max}
     return data
 
 
 def calculate_tukey_dispersion(five):
+    """Calculate Tukey dispersion"""
     data = {
         "Range": five["Max"] - five["Min"],
         "IQR": five["Q3"] - five["Q1"],
@@ -28,6 +31,7 @@ def calculate_tukey_dispersion(five):
 
 
 def restyle_boxplot(patch):
+    """Restyle boxplot"""
     ## change color and linewidth of the whiskers
     for whisker in patch['whiskers']:
         whisker.set(color='#000000', linewidth=1)

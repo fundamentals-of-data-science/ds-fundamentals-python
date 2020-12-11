@@ -40,6 +40,7 @@ def summarize(formula, X, y, model, style='linear'):
 
 
 def linear_regression(formula, data=None, style="linear", params={}):
+    """Linear regression"""
     if data is None:
         raise ValueError( "The parameter 'data' must be assigned a non-nil reference to a Pandas DataFrame")
 
@@ -84,6 +85,7 @@ def logistic(z):
 
 
 def logistic_regression( formula, data=None):
+    """Logistic regression"""
     if data is None:
         raise ValueError( "The parameter 'data' must be assigned a non-nil reference to a Pandas DataFrame")
 
